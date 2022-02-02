@@ -62,6 +62,10 @@
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
+  height:200px;
+  overflow:scroll;
+  overflow-x:hidden;
+  padding-right: 5px;
 }
 
 .show-img {
@@ -137,4 +141,18 @@
 
   .sub-page-feed{
     margin-left: 20%;
+  }
+
+  #infoShade {
+  z-index: 1;
+  background-color:rgb(57, 39, 171);
+  border-style: solid;
+  border: 2px solid #f3f3f3;
+  width: 300px;
+  height: 78.5%;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-right: 10px;
   }

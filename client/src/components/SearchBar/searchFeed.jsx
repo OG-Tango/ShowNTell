@@ -11,7 +11,7 @@ const viewSwitch = (view, shows, movies, addShow, addMovie) => {
       <div>
         <div className="search-results-header">TV Shows: </div>
         <div className="scrolling-container">
-          {shows.map(({ show }, i) => <SearchFeedEntry classname="search-feed-entry" key={show + i} show={show} onClick={addShow} />)}
+          {shows.map(({ show }, i) => <SearchFeedEntry className="search-feed-entry" key={show + i} show={show} onClick={addShow} />)}
         </div>
       </div>
     );
@@ -20,7 +20,7 @@ const viewSwitch = (view, shows, movies, addShow, addMovie) => {
       <div>
         <div className="search-results-header">Movies: </div>
         <div className="scrolling-container">
-          {movies.map((movie) => <SearchMovieFeedEntry classname="search-feed-entry" key={movie.id} movie={movie} onClick={addMovie} />)}
+          {movies.map((movie) => <SearchMovieFeedEntry className="search-feed-entry" key={movie.id} movie={movie} onClick={addMovie} />)}
         </div>
       </div>
     );
